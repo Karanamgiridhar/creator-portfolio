@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Firebase local cache
+.firebase/
+
+# Large backup video masters (1.5GB - kept safe locally on your PC)
+_masters_backup/
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

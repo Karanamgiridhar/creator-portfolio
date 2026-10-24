@@ -1,0 +1,58 @@
+{
+  "hosting": {
+    "public": ".",
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "*.py",
+      "*.ps1",
+      "*.bat",
+      "_masters_backup/**",
+      "node_modules/**",
+      "*.log"
+    ],
+    "redirects": [
+      {
+        "source": "/creators",
+        "destination": "/#creators",
+        "type": 302
+      },
+      {
+        "source": "/creators.html",
+        "destination": "/#creators",
+        "type": 302
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/google4b8e436ee678bed8.html",
+        "destination": "/google4b8e436ee678bed8.html"
+      },
+      {
+        "source": "/projects",
+        "destination": "/projects.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|mp4|webm)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
+    ]
+  }
+}

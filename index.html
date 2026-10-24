@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiriEditsZone | Giridhar Sai Kiran (Giri Edits) — Official Portfolio & Video Editor</title>
+
+    <!-- SEO & Search Engine Optimization -->
+    <link rel="canonical" href="https://girieditszone.web.app/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="description"
+        content="Official portfolio of Giridhar Sai Kiran (GiriEditsZone / Giri Edits) — Professional Filmmaker, Video Editor, Commercial Photographer, and Content Creator. Explore commercial projects, color grading, and creative training." />
+    <meta name="keywords"
+        content="girieditszone, giriedits, giridhar sai kiran, giri edits zone, giri edits, giri, karanam giridhar saikiran, giriedits zone, giridhar saikiran, video editor, cinematographer, commercial videographer, freelance video editor, telugu video editor, da vinci resolve, capcut editor, content creator" />
+    <meta name="author" content="Giridhar Sai Kiran (GiriEditsZone)" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GiriEditsZone | Giridhar Sai Kiran" />
+    <meta property="og:url" content="https://girieditszone.web.app/" />
+    <meta property="og:title" content="GiriEditsZone | Giridhar Sai Kiran (Giri Edits) — Official Portfolio" />
+    <meta property="og:description"
+        content="Official portfolio of Giridhar Sai Kiran (GiriEditsZone / Giri Edits) — Filmmaker, Video Editor, Photographer & Creator." />
+    <meta property="og:image" content="https://girieditszone.web.app/assets/pic.webp" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://girieditszone.web.app/" />
+    <meta name="twitter:title" content="GiriEditsZone — Videographer, Editor & Creator" />
+    <meta name="twitter:description"
+        content="Official portfolio of GiriEditsZone (Giridhar Sai Kiran / Giri) — Filmmaker, Video Editor, Photographer & Creator." />
+    <meta name="twitter:image" content="https://girieditszone.web.app/assets/pic.webp" />
+
+    <!-- Fonts: Outfit (Headings), Inter (Body), JetBrains Mono (Technical) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 Icons for Social Brands & Software Logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheets -->
+    <link rel="icon" type="image/webp" href="assets/pic.webp" />
+    <link rel="apple-touch-icon" href="assets/pic.webp" />
+    <link rel="stylesheet" href="css/theme.css?v=2.3" />
+    <link rel="stylesheet" href="css/style.css?v=2.4" />
+
+    <!-- CRITICAL INLINE CSS: Guaranteed visibility and smooth carousel for Creators section -->
+    <style id="creators-critical-css">
+        #creators {
+            position: relative;
+            z-index: 10;
+        }
+        #creators .creators-carousel-wrap {
+            position: relative;
+            max-width: 1360px;
+            margin: 0 auto;
+            padding: 10px 0 30px 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        #creators .creators-track-viewport {
+            overflow: hidden;
+            width: 100%;
+            flex: 1;
+            padding: 20px 10px 35px 10px;
+        }
+        #creators .creators-track {
+            display: flex;
+            gap: 24px;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #creators .creator-card {
+            flex: 0 0 calc((100% - 48px) / 3);
+            min-width: calc((100% - 48px) / 3);
+            background: rgba(14, 14, 18, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(229, 184, 64, 0.3);
+            border-radius: var(--radius-lg, 20px);
+            padding: 24px 22px;
+            position: relative;
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: none !important;
+            display: flex !important;
+            flex-direction: column;
+            gap: 16px;
+            box-shadow: 0 16px 35px -8px rgba(0, 0, 0, 0.8), 0 0 25px -4px var(--card-glow, rgba(229, 184, 64, 0.35));
+        }
+        @media (max-width: 1024px) {
+            #creators .creator-card {
+                flex: 0 0 calc((100% - 24px) / 2);
+                min-width: calc((100% - 24px) / 2);
+            }
+        }
+        @media (max-width: 768px) {
+            #creators .creator-card {
+                flex: 0 0 100%;
+                min-width: 100%;
+            }
+            .navbar .nav-cta-wrap .btn-primary,
+            .navbar .btn-primary {
+                display: none !important;
+            }
+        }
+    </style>
+
+    <!-- Structured Data (Schema.org JSON-LD for Google Knowledge Graph & Rich Results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://girieditszone.web.app/#website",
+          "url": "https://girieditszone.web.app/",
+          "name": "GiriEditsZone",
+          "alternateName": [
+            "Giri Edits Zone",
+            "GiriEdits",
+            "girieditszone",
+            "Giri Edits",
+            "Giri Portfolio",
+            "girieditszone.web.app"
+          ],
+          "description": "Official portfolio of GiriEditsZone (Giridhar Sai Kiran) — Videographer, Editor, Photographer & Creator.",
+          "inLanguage": "en",
+          "publisher": {
+            "@id": "https://girieditszone.web.app/#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://girieditszone.web.app/#person",
+          "name": "Giridhar Sai Kiran",
+          "additionalName": "Giri",
+          "alternateName": [
+            "GiriEditsZone",
+            "Giri Edits Zone",
+            "Karanam Giridhar Saikiran",
+            "giri.editszone",
+            "Giri Edits"
+          ],
+          "jobTitle": "Filmmaker, Video Editor, Commercial Photographer & Content Creator",
+          "url": "https://girieditszone.web.app/",
+          "image": "https://girieditszone.web.app/assets/pic.webp",
+          "sameAs": [
+            "https://www.youtube.com/@GiriEditsZone",
+            "https://www.instagram.com/giri.editszone/"
+          ],
+          "knowsAbout": [
+            "Video Editing",
+            "DaVinci Resolve",
+            "CapCut",
+            "Cinematography",
+            "Color Grading",
+            "Content Creation",
+            "Commercial Photography",
+            "Mobile Videography"
+          ]
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://girieditszone.web.app/#profilepage",
+          "url": "https://girieditszone.web.app/",
+          "name": "GiriEditsZone Official Portfolio",
+          "isPartOf": {
+            "@id": "https://girieditszone.web.app/#website"
+          },
+          "mainEntity": {
+            "@id": "https://girieditszone.web.app/#person"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Film Grain Overlay -->
+    <div class="film-grain"></div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot" class="custom-cursor-dot"></div>
+    <div id="cursor-ring" class="custom-cursor-ring"></div>
+
+    <!-- Preloader (Plays 6-second continuous animation on reload or first visit, skipped on redirect) -->
+    <script>
+        (function () {
+            var isReload = false;
+            try {
+                var navEntries = (window.performance && performance.getEntriesByType) ? performance.getEntriesByType('navigation') : [];
+                if (navEntries.length > 0 && navEntries[0].type === 'reload') {
+                    isReload = true;
+                } else if (window.performance && performance.navigation && performance.navigation.type === 1) {
+                    isReload = true;
+                }
+            } catch (e) {
+                isReload = false;
+            }
+
+            if (window.location.hash) {
+                // When navigating directly to an anchor like #creators, skip preloader so section shows immediately
+                document.documentElement.classList.add('no-preloader');
+                sessionStorage.setItem('gez_intro_played', 'true');
+            } else if (isReload) {
+                // Whenever website is reloaded, ensure intro animation appears
+                sessionStorage.removeItem('gez_intro_played');
+                document.documentElement.classList.remove('no-preloader');
+            } else if (sessionStorage.getItem('gez_intro_played') === 'true') {
+                // When redirecting/navigating back, skip preloader immediately
+                document.documentElement.classList.add('no-preloader');
+            }
+        })();
+    </script>
+    <div id="preloader">
+        <div class="preloader-brand text-gold-gradient">GEZ</div>
+        <div class="preloader-progress">
+            <div id="preloader-bar" class="preloader-bar"></div>
+        </div>
+        <div id="preloader-counter" class="preloader-counter">0%</div>
+        <div id="preloader-subtitle" class="preloader-subtitle">INITIALIZING CINEMATIC ENGINE...</div>
+    </div>
+
+    <!-- Global Ambient Background & Lighting Animations -->
+    <div class="global-bg-backdrop"></div>
+    <div class="global-bg-overlay"></div>
+    <div class="ambient-glow-orb ambient-orb-1"></div>
+    <div class="ambient-glow-orb ambient-orb-2"></div>
+    <div class="ambient-glow-orb ambient-orb-3"></div>
+
+    <!-- STICKY HEADER & NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <!-- BRAND LOGO & EMBLEM -->
+            <a href="#home" class="brand-logo" aria-label="GEZ Homepage">
+                <div class="logo-symbol-wrap">
+                    <img src="assets/pic.webp" alt="GiriEditsZone Logo" class="logo-symbol-img" />
+                </div>
+                <div class="logo-text-wrap">
+                    <span class="logo-brand-name">GEZ</span>
+
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Primary Navigation">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#creators">CREATORS</a>
+                <a href="#services">SERVICES</a>
+                <a href="#skills">EXPERTISE</a>
+                <a href="#work">WORK</a>
+                <a href="#training">TRAINING</a>
+                <a href="#team">TEAM</a>
+                <a href="#testimonials">REVIEWS</a>
+                <a href="#social">SOCIAL</a>
+            </nav>
+
+            <div class="nav-cta-wrap">
+                <button class="btn-primary" onclick="openClientModal()">
+                    <i class="fa-regular fa-paper-plane"></i> WORK WITH ME
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div id="mobile-drawer" class="mobile-nav-drawer">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#creators">CREATORS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#skills">EXPERTISE</a>
+        <a href="#work">WORK</a>
+        <a href="#training">TRAINING</a>
+        <a href="#team">TEAM</a>
+        <a href="#testimonials">REVIEWS</a>
+        <a href="#social">SOCIAL</a>
+        <button class="btn-primary" style="margin-top:20px;"
+            onclick="openClientModal(); document.getElementById('mobile-drawer').classList.remove('open');">
+            WORK WITH ME
+        </button>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-glow-orb"></div>
+        <div class="container hero-content">
+            <div class="hero-text-side">
+                <span class="hero-sub-title">VIDEOGRAPHER / EDITOR / PHOTOGRAPHER / CREATOR</span>
+                <h1 id="hero-name" class="hero-title-name">Giri EditsZone</h1>
+                <p class="hero-description">
+                    Creating cinematic visuals, powerful stories, and high-retention digital experiences that make
+                    brands and creators impossible to ignore.
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="openClientModal()">
+                        <i class="fa-regular fa-paper-plane"></i> WORK WITH ME
+                    </button>
+                    <a href="#training" class="btn-secondary">
+                        <i class="fa-solid fa-graduation-cap"></i> EXPLORE TRAINING
+                    </a>
+
+                </div>
+
+                <!-- HERO SOCIAL LINKS -->
+                <div class="hero-socials">
+                    <a href="https://www.instagram.com/giri.editszone/" target="_blank" rel="noopener" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@GiriEditsZone" target="_blank" rel="noopener" aria-label="YouTube"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="javascript:void(0)" style="opacity:0.4; cursor:default;" aria-label="LinkedIn (Coming Soon)" title="LinkedIn (Coming Soon)"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="javascript:void(0)" style="opacity:0.4; cursor:default;" aria-label="Twitter / X (Coming Soon)" title="Twitter / X (Coming Soon)"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- HERO SHOWCASE IMAGE (REPLACING VIDEO WITH BG PIC IMAGE) -->
+            <div class="hero-visual-side">
+                <div class="hero-showcase-container" id="hero-showcase-card">
+                    <img src="assets/bg pic/DSC02661.webp"
+                        srcset="assets/bg pic/hero-showcase.webp 1200w, assets/bg pic/DSC02661.webp 2560w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 620px"
+                        alt="Giridhar Sai Kiran — Cinematographer & Content Creator with 4K Cinema Camera"
+                        class="hero-showcase-img" loading="eager" />
+
+                    <!-- Ambient Glow & Overlay Details -->
+                    <div class="hero-showcase-overlay">
+                        <div class="hero-showcase-badges">
+                            <span class="hero-showcase-badge live-badge">
+                                <span class="badge-dot-pulse"></span> CINEMATOGRAPHER
+                            </span>
+                            <span class="hero-showcase-badge live-badge">
+                                <span class="badge-dot-pulse"></span> MENTOR
+                            </span>
+                            <span class="hero-showcase-badge live-badge">
+                                <i class="fa-solid fa-camera"></i> VIDEO EDITOR
+                            </span>
+                        </div>
+
+                        <div class="hero-showcase-caption">
+                            <div class="caption-text-wrap">
+
+                            </div>
+                            <span class="caption-indicator">
+                                <i class="fa-solid fa-film"></i> GEZ 2026
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-portrait-wrap">
+                    <video id="about-portrait-video" class="about-portrait" autoplay loop muted playsinline preload="auto" poster="assets/works/covers/proj-edit-1_0130.webp">
+                        <source src="assets/works/video_editing/0130.mp4" type="video/mp4" />
+                    </video>
+                    <button class="about-sound-toggle" onclick="toggleAboutVideoAudio(this)" aria-label="Toggle video audio">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="about-info">
+                    <span class="section-tag">// BEHIND THE LENS</span>
+                    <h2 class="section-title">THE STORYTELLER BEHIND THE TIMELINE</h2>
+                    <p class="about-bio">
+                        Hey, I'm <strong>Giridhar Sai Kiran</strong> — a filmmaker, video editor, commercial
+                        photographer, and content strategist obsessed with rhythm, color, and cinematic momentum. Over
+                        the past 3+ years, I've transformed raw concepts into high-converting visual campaigns, viral
+                        reels, and polished commercial films for brands and creators worldwide.
+                    </p>
+                    <p class="about-bio">
+                        Beyond production, I run high-impact editing cohorts designed to take aspiring editors from
+                        basic cut-and-paste to industry-level visual directors.
+                    </p>
+
+                    <!-- EDITABLE STATS GRID -->
+                    <div id="stats-grid" class="stats-grid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREATORS I WORKED WITH (INSTAGRAM PROFILE CARDS CAROUSEL) -->
+    <section id="creators" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// DIGITAL COLLABORATIONS</span>
+                <h2 class="section-title">CREATORS & INFLUENCERS I WORKED WITH</h2>
+                <p class="section-subtitle">High-retention visual editing, storytelling, and creative production
+                    powering leading digital creators.</p>
+            </div>
+
+            <div class="creators-carousel-wrap">
+                <button id="creator-prev-btn" class="creators-nav-btn creators-side-btn creators-side-prev"
+                    onclick="prevCreators()" aria-label="Previous Creators">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="creators-track-viewport">
+                    <div id="creators-track" class="creators-track"></div>
+                </div>
+
+                <button id="creator-next-btn" class="creators-nav-btn creators-side-btn creators-side-next"
+                    onclick="nextCreators()" aria-label="Next Creators">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & EXPERTISE SECTION -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// WHAT I DO</span>
+                <h2 class="section-title">CREATIVE PILLARS & EXPERTISE</h2>
+                <p class="section-subtitle">Tailored end-to-end production, post-production, and mentorship services
+                    designed for brands, agencies, and aspiring creators.</p>
+            </div>
+            <div id="services-grid" class="services-grid"></div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE & SOFTWARE SKILLS SECTION -->
+    <section id="skills" class="section" style="background:var(--color-surface-subtle);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// INDUSTRY TOOLKIT</span>
+                <h2 class="section-title">TECHNICAL & CREATIVE SKILLS</h2>
+                <p class="section-subtitle">Battle-tested tools and specialized disciplines mastered over hundreds of
+                    delivered projects.</p>
+            </div>
+            <div id="skills-grid" class="skills-grid"></div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / PROJECTS I WORKED WITH SECTION -->
+    <section id="work" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// SELECTED DIRECTORIES</span>
+                <h2 class="section-title">PROJECTS I WORKED WITH</h2>
+                <p class="section-subtitle">Explore commercial films, precision color edits, viral short-form reels, and
+                    editorial photography. Click any collection folder to open its full video & photo gallery.</p>
+            </div>
+
+            <!-- PORTFOLIO FILTER TABS -->
+            <div id="portfolio-filters" class="portfolio-filters">
+                <button class="filter-btn active" onclick="filterPortfolio('all', this)">ALL COLLECTIONS</button>
+                <button class="filter-btn" onclick="filterPortfolio('commercial', this)">COMMERCIAL VIDEOGRAPHY</button>
+                <button class="filter-btn" onclick="filterPortfolio('editing', this)">VIDEO EDITING</button>
+                <button class="filter-btn" onclick="filterPortfolio('thumbnails', this)">THUMBNAILS</button>
+                <button class="filter-btn" onclick="filterPortfolio('photos', this)">PHOTOGRAPHY</button>
+            </div>
+
+            <!-- PORTFOLIO GRID -->
+            <div id="portfolio-grid" class="portfolio-grid"></div>
+
+            <div style="text-align:center; margin-top:36px;">
+                <a href="projects.html" class="btn-primary" style="display:inline-flex;align-items:center;gap:10px;">
+                    <i class="fa-solid fa-folder-open"></i> EXPLORE ALL PROJECT ARCHIVES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINING PACKS & COURSES SECTION -->
+    <section id="training" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// EXCLUSIVE MENTORSHIP</span>
+                <h2 class="section-title">TRAINING PACKS & COURSES</h2>
+                <p class="section-subtitle">
+                    Intensive mentorship programs and structured courses for ambitious video editors, videographers, and creators to master their craft and monetize their skills.
+                </p>
+            </div>
+            <div id="training-grid" class="training-grid"></div>
+        </div>
+    </section>
+
+    <!-- MEET MY TEAM SECTION -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// THE CORE TEAM</span>
+                <h2 class="section-title">MEET MY TEAM</h2>
+                <p class="section-subtitle">The creative and technical minds engineering high-impact visuals and digital
+                    platforms.</p>
+            </div>
+            <div id="team-grid" class="team-grid"></div>
+        </div>
+    </section>
+
+    <!-- STUDENT TESTIMONIALS / VIDEO REVIEWS SECTION -->
+    <section id="testimonials" class="section reviews-section" style="background:var(--color-surface-subtle);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// COHORT TRANSFORMATIONS</span>
+                <h2 class="section-title">STUDENT TESTIMONIALS</h2>
+                <p class="section-subtitle">Real people. Real transformations. Hear from our students who mastered video
+                    editing.</p>
+            </div>
+
+            <!-- Continuous Movement Video Reviews Carousel -->
+            <div class="reviews-carousel-outer" id="reviews-carousel-outer">
+                <div class="reviews-viewport" id="reviews-viewport">
+                    <div id="reviews-track" class="reviews-track"></div>
+                </div>
+            </div>
+
+            <p class="reviews-footer-note">Join thousands of students who transformed their editing skills.</p>
+        </div>
+    </section>
+
+    <!-- SOCIAL MEDIA SECTION & CONTENT WALL -->
+    <section id="social" class="section" style="background:var(--color-surface);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// DIGITAL PRESENCE</span>
+                <h2 class="section-title">FOLLOW THE JOURNEY</h2>
+                <p class="section-subtitle">Join the growing community of visual creators and students across Instagram,
+                    YouTube, LinkedIn, and more — for editing tips, behind-the-scenes, and training content.</p>
+            </div>
+            <div id="social-platforms-grid" class="social-platforms-grid"></div>
+
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section id="cta" class="section">
+        <div class="container">
+            <div class="cta-banner">
+                <span class="section-tag">// LET'S BUILD SOMETHING UNFORGETTABLE</span>
+                <h2 class="section-title" style="font-size:clamp(2.5rem, 4vw, 3.8rem); margin-top:12px;">READY TO
+                    CREATE?</h2>
+                <p
+                    style="color:var(--color-text-muted); max-width:620px; margin:0 auto 32px auto; font-size:1.1rem; line-height:1.7;">
+                    Whether you need a cinematic brand film, a powerful video edit, striking commercial photography, or
+                    want to master the craft yourself — let's work together.
+                </p>
+                <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+                    <button class="btn-primary" onclick="openClientModal()">START A PROJECT</button>
+                    <a href="#training" class="btn-secondary">EXPLORE TRAINING</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="brand-logo footer-brand-logo" aria-label="GiriEditsZone Homepage">
+                        <div class="logo-symbol-wrap">
+                            <img src="assets/pic.webp" alt="GiriEditsZone Logo" class="logo-symbol-img" />
+                        </div>
+                        <div class="logo-text-wrap">
+                            <span class="logo-brand-name">Giri<span
+                                    style="color:var(--color-primary);font-weight:400;">EditsZone</span></span>
+                            <span class="logo-brand-tag">STUDIO</span>
+                        </div>
+                    </a>
+                    <p>Professional visual creator, editor, photographer, content creator & mentor sculpting high-impact
+                        brand stories.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVIGATION</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#creators">Creators I Worked With</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Projects I Worked With</a></li>
+                        <li><a href="projects.html">Project Archives</a></li>
+                        <li><a href="#training">Training Packs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="#services">Videography</a></li>
+                        <li><a href="#services">Post-Production</a></li>
+                        <li><a href="#services">Photography</a></li>
+                        <li><a href="#services">Reels Strategy</a></li>
+                        <li><a href="#training">Mentorship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONNECT</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/giri.editszone/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@GiriEditsZone" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="javascript:void(0)" style="opacity:0.6; cursor:default;" title="Coming Soon">LinkedIn (Coming Soon)</a></li>
+                        <li><a href="javascript:void(0)" onclick="trigger404()">404 Test Page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 GiriEditsZone. All rights reserved.</p>
+                <p>Designed with Centralized Gold, White & Dark Cinematic Theme System.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+       MODALS SYSTEM
+       ========================================================================== -->
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div id="project-modal" class="modal-overlay">
+        <div id="project-modal-content" class="modal-card"></div>
+    </div>
+
+    <!-- SHOWREEL MODAL -->
+    <div id="showreel-modal" class="modal-overlay">
+        <div class="modal-card" style="max-width:960px; padding:20px; background:#000;">
+            <button class="modal-close-btn" onclick="closeShowreelModal()">&times;</button>
+            <div style="aspect-ratio:16/9; width:100%;">
+                <video id="showreel-modal-video" controls style="width:100%; height:100%; object-fit:cover;"></video>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRAINING ENQUIRY MODAL -->
+    <div id="training-modal" class="modal-overlay">
+        <div id="training-modal-content" class="modal-card"></div>
+    </div>
+
+    <!-- CLIENT PROJECT ENQUIRY MODAL ("LET'S CREATE SOMETHING") -->
+    <div id="client-modal" class="modal-overlay">
+        <div id="client-modal-content" class="modal-card">
+            <button class="modal-close-btn" onclick="closeAllModals()">&times;</button>
+            <span class="section-tag">// WORK WITH ME</span>
+            <h2 style="font-family:var(--font-heading); font-size:2rem; font-weight:800; margin-bottom:12px;">PROJECT ENQUIRY & NEGOTIATION</h2>
+            <p style="color:var(--color-text-muted); margin-bottom:24px; font-size:0.95rem;">
+                Tell us about your project vision, timeline, and budget. Giri will connect directly with you on WhatsApp (<strong style="color:var(--color-primary);">+91 8328415457</strong>) to discuss pricing, scope, and deliverables.
+            </p>
+
+            <form id="client-enquiry-form" onsubmit="handleClientEnquirySubmit(event)">
+                <input type="text" name="honeypot" style="display:none;" tabindex="-1" autocomplete="off" />
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+                    <div class="form-group">
+                        <label class="form-label">Your Name / Brand *</label>
+                        <input type="text" name="name" class="form-input" placeholder="e.g. Alex Media / David Chen"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone / WhatsApp Number *</label>
+                        <input type="tel" name="phone" class="form-input" placeholder="e.g. +91 83284 15457" required />
+                    </div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" name="email" class="form-input" placeholder="you@company.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Project Type *</label>
+                        <select name="projectType" class="form-select" required>
+                            <option value="">Select Project Type</option>
+                            <option value="Commercial Videography">Commercial Videography & Films</option>
+                            <option value="Video Editing">Video Editing & Post-Production</option>
+                            <option value="Thumbnails">YouTube & Brand Thumbnails</option>
+                            <option value="Photography">Commercial & Lookbook Photography</option>
+                            <option value="Brand Campaign">Full Brand Campaign</option>
+                            <option value="Creator Mentorship">Creator Mentorship / Training</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+                    <div class="form-group">
+                        <label class="form-label">Estimated Budget Range</label>
+                        <input type="text" name="budget" class="form-input" placeholder="e.g. ₹15,000 - ₹30,000 / Flexible" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Reference Video / Drive Link</label>
+                        <input type="url" name="referenceLink" class="form-input"
+                            placeholder="e.g. YouTube, Google Drive, Vimeo, or Instagram link" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Project Description & Requirements *</label>
+                    <textarea name="message" class="form-textarea" rows="4"
+                        placeholder="Describe your project vision, target audience, timeline, or specific deliverables to negotiate..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary"
+                    style="width:100%; margin-top:10px; display:flex; align-items:center; justify-content:center; gap:10px; font-size:0.96rem;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:1.3rem;"></i> SEND ENQUIRY TO WHATSAPP (+91 8328415457)
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- CUSTOM 404 MODAL ("404 — FRAME NOT FOUND") -->
+    <div id="notfound-modal" class="modal-overlay">
+        <div class="modal-card" style="text-align:center; padding:50px 30px;">
+            <button class="modal-close-btn" onclick="closeAllModals()">&times;</button>
+            <div
+                style="font-family:var(--font-mono); font-size:4rem; font-weight:900; color:var(--color-primary); margin-bottom:12px;">
+                404</div>
+            <h2 style="font-family:var(--font-heading); font-size:1.8rem; font-weight:800; margin-bottom:12px;">FRAME
+                NOT FOUND</h2>
+            <p style="color:var(--color-text-muted); max-width:400px; margin:0 auto 24px auto;">
+                The frame or cut you are looking for has been moved, re-edited, or does not exist in this timeline.
+            </p>
+            <button class="btn-primary" onclick="closeAllModals()">BACK TO HOME</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/data.js?v=2.3"></script>
+    <script src="js/trainingService.js?v=2.3"></script>
+    <script src="js/enquiryService.js?v=2.3"></script>
+    <script src="js/app.js?v=2.3"></script>
+</body>
+
+</html>

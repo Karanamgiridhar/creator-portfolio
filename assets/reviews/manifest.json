@@ -1,0 +1,42 @@
+[
+  {
+    "id": "review-1",
+    "name": "Student 1",
+    "video": "assets/reviews/student1.mp4",
+    "poster": "assets/reviews/student1_poster.jpg",
+    "tagline": "Practical learning // Real growth",
+    "course": "Mastered DaVinci Resolve & Premiere Pro"
+  },
+  {
+    "id": "review-2",
+    "name": "Student 2",
+    "video": "assets/reviews/student2.mp4",
+    "poster": "assets/reviews/student2_poster.jpg",
+    "tagline": "Practical learning // Real growth",
+    "course": "From Beginner to Full-Time Editor"
+  },
+  {
+    "id": "review-3",
+    "name": "Student 3",
+    "video": "assets/reviews/student3.mp4",
+    "poster": "assets/reviews/student3_poster.jpg",
+    "tagline": "Practical learning // Real growth",
+    "course": "Cinematic Storytelling & Color Grading"
+  },
+  {
+    "id": "review-4",
+    "name": "Student 4",
+    "video": "assets/reviews/student4.mp4",
+    "poster": "assets/reviews/student4_poster.jpg",
+    "tagline": "Practical learning // Real growth",
+    "course": "Landed High-Ticket Brand Projects"
+  },
+  {
+    "id": "review-5",
+    "name": "Student 5",
+    "video": "assets/reviews/student5.mp4",
+    "poster": "assets/reviews/student5_poster.jpg",
+    "tagline": "Practical learning // Real growth",
+    "course": "Sound Design & Advanced Motion Timing"
+  }
+]
